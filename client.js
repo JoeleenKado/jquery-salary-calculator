@@ -9,11 +9,16 @@ function readyNow() {//ENTER readyNow
     $('#submitButton').on('click', addEmployee);
 };//EXIT readyNow
 
-const employeeRoladex = [];
+let employeeRoladex = []; 
+//let monthlyCompanyCost = totalCompanyCost / 12;
+let totalCompanyCost= 0;
 
-function addEmployee() {//ENTER addEmployee function
+function addEmployee() {//ENTER addEmployee
+    let monthlyCompanyCost = totalCompanyCost / 12;
+
     //use the event passed in to stop the default action
     //of page refresh
+    event.preventDefault(event);
     let employeeObject = {
         firstName : $('#firstNameIn').val(),
         lastName : $('#lastNameIn').val(),
@@ -21,11 +26,17 @@ function addEmployee() {//ENTER addEmployee function
         jobtitle : $('#jobTitleIn').val(),
         annualSalary : $('#annualSalaryIn').val()
     }
+    totalCompanyCost += Number(employeeObject.annualSalary);
     employeeRoladex.push(employeeObject)
-     console.log(employeeObject);
-     console.log(employeeRoladex);
-     event.preventDefault(event);
+    console.log(employeeObject);
+    console.log(employeeRoladex);
+    console.log(`The 'totalCompanyCost' is ${totalCompanyCost}. 
+    And, The 'MonthlyCompanyCost is ${totalCompanyCost / 12}`);
+    
+   // calculateMonthlyCost();
+};//EXIT addEmployee 
 
-};//EXIT addEmployee function
+//function calculateMonthlyCost() {//ENTER calculateMonthlyCost
+//console.log('In CalculateMonthlyCost');
 
-//console.log(addEmployee);
+//};//EXIT calculateMonthlyCost
