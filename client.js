@@ -12,6 +12,8 @@ function readyNow() {//ENTER readyNow
 const employeeRoladex = [];
 
 function addEmployee() {//ENTER addEmployee function
+    //use the event passed in to stop the default action
+    //of page refresh
     let employeeObject = {
         firstName : $('#firstNameIn').val(),
         lastName : $('#lastNameIn').val(),
@@ -19,4 +21,11 @@ function addEmployee() {//ENTER addEmployee function
         jobtitle : $('#jobTitleIn').val(),
         annualSalary : $('#annualSalaryIn').val()
     }
+    employeeRoladex.push(employeeObject)
+     console.log(employeeObject);
+     console.log(employeeRoladex);
+     event.preventDefault(event);
+
 };//EXIT addEmployee function
+
+//console.log(addEmployee);
