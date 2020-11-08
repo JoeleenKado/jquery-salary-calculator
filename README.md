@@ -6,7 +6,7 @@
 
 ## Description
 
-_Duration: 10 hrs_
+_Duration: 12 hrs_
 
 This application allows you to ostensibly add employees to Our Co. and see the reflected cost to Our Co. 
 
