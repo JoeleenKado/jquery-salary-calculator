@@ -4,10 +4,14 @@ $(document).ready(readyNow);
 
 function readyNow() {//ENTER readyNow
     console.log('JQ is READY');
+
     /*A 'Submit' button, should collect the form information,
     and store the information to calculate monthly costs,
     append information to the DOM and */
     $('#submitButton').on('click', addEmployee);
+    /*Create a delete button that removes an employee from the DOM. 
+    For Base mode, it does **not** need to remove that Employee's salary from the reported total.*/
+    $('#deleteButton').on('click', deleteEmployeeFunction);
 };//EXIT readyNow  
 
 let totalCompanyCost= 0;
@@ -60,3 +64,8 @@ function appendMonthlyTODOM( ) {//ENTER appendMonthlyTODOM
     $('#jobTitleIn').val('');
     $('#annualSalaryIn').val('');
     };//EXIT appendMonthlyTODOM
+
+function deleteEmployeeFunction() {
+        console.log('You have deleted an employee.');
+        
+    }

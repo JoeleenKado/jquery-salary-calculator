@@ -8,7 +8,7 @@
 
 _Duration: 10 hrs_
 
-This app allows you to obstensibly add employees to Our Co., and see the reflected cost to Our Co. 
+This application allows you to ostensibly add employees to Our Co., and see the reflected cost to Our Co. 
 
 ## Screen Shot
 
