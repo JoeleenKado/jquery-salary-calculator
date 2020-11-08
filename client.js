@@ -40,6 +40,11 @@ function addEmployee() {//ENTER addEmployee
     let annualSalaryTODOM = `<th class="">${employeeObject.annualSalary}</th>`;
     $('#employeeTable').append(`<tr>${firstNameToDOM}, ${lastNameToDOM}, ${iDNumToDOM}, ${jobTitleToDOM}, ${annualSalaryTODOM}</tr>`);
 
+    //If the total monthly cost exceeds $20,000, add a red background color to the total monthly cost.
+    if (totalCompanyCost / 12 > 20000) {
+        $('#monthlyCompanyCostToDOM').addClass('red');
+    };
+
     appendMonthlyTODOM();
 };//EXIT addEmployee 
 
