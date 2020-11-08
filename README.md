@@ -1,6 +1,6 @@
-![REPO SIZE](https://img.shields.io/github/repo-size/JoelleKado/jquery-salary-calculator/the_marketplace.svg?style=flat-square)
-![TOP_LANGUAGE](https://img.shields.io/github/languages/top/JoelleKado/jquery-salary-calculator/the_marketplace.svg?style=flat-square)
-![FORKS](https://img.shields.io/github/forks/JoelleKado/jquery-salary-calculator/the_marketplace.svg?style=social)
+![REPO SIZE](https://img.shields.io/github/repo-size/JoelleKado/jquery-salary-calculator.svg?style=flat-square)
+![TOP_LANGUAGE](https://img.shields.io/github/languages/top/JoelleKado/jquery-salary-calculator.svg?style=flat-square)
+![FORKS](https://img.shields.io/github/forks/JoelleKado/jquery-salary-calculator.svg?style=social)
 
 # jQuery Salary Calculator
 
@@ -50,7 +50,7 @@ List technologies and frameworks here
 _Note, include this only if you have a license file. GitHub will generate one for you if you want!_
 
 ## Acknowledgement
-Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. (Thank your people)
+Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. (Thank you: https://github.com/zuberabdikadir, https://github.com/sdeda1us, https://github.com/jordanNewberry21)
 
 ## Support
 If you have suggestions or issues, please email me at [youremail@whatever.com](www.google.com)
