@@ -8,13 +8,10 @@
 
 _Duration: 10 hrs_
 
-This application allows you to ostensibly add employees to Our Co., and see the reflected cost to Our Co. 
+This application allows you to ostensibly add employees to Our Co. and see the reflected cost to Our Co. 
 
-## Screen Shot
-
-![intro](screenShot.png)
-
-Include one or two screen shots of your project here (optional). Remove if unused.
+![intro](images/calculator.png)
+![intro](images/redCalculator.png)
 
 ## Installation
 
@@ -23,12 +20,12 @@ Include one or two screen shots of your project here (optional). Remove if unuse
 3. Open `/index.html` in your web browser.
 
 ## Usage
-To view the current financial status of our Company, pending the induction of a new employee:
+To view the current financial status of our Company, pending induction of a new employee:
 
 1. Open Our Co. Salary Calculator in your web browser.
 2. Input employee information into the input fields on the New Employee Form.
-3. Once all fields are filled, click the Submit Button, and a snapshot of Our Co.'s Roster, along with Our Co.'s Salary obligations will be showcased on your screen. *A red banner indicates an instance where Our Co. cannot afford the employee roster.
-4. To remove an employee from the showcase, click the ...........
+3. Once all fields are filled, click the Submit Button, and a snapshot of Our Co.'s roster, along with Our Co.'s salary obligations will be showcased on your screen. *A red banner indicates an instance where Our Co. cannot afford the employee roster.
+4. To remove an employee from the showcase, click the the DELETE button to the right of the employee record.
 
 ## Built With
 
