@@ -10,7 +10,6 @@ _Duration: 10 hrs_
 
 This application allows you to ostensibly add employees to Our Co. and see the reflected cost to Our Co. 
 
-![intro](images/calculator.png)
 ![intro](images/redCalculator.png)
 
 ## Installation
