@@ -5,20 +5,30 @@ $(document).ready(readyNow);
 function readyNow() {//ENTER readyNow
     console.log('JQ is READY');
     /*A 'Submit' button, should collect the form information,
-    and store the information to calculate monthly costs*/
+    and store the information to calculate monthly costs,
+    append information to the DOM and */
     $('#submitButton').on('click', addEmployee);
-};//EXIT readyNow
+};//EXIT readyNow  
+
+let totalCompanyCost= 0;
+
 
 let employeeRoladex = []; 
 //let monthlyCompanyCost = totalCompanyCost / 12;
-let totalCompanyCost= 0;
 
 function addEmployee() {//ENTER addEmployee
-    let monthlyCompanyCost = totalCompanyCost / 12;
-
+   // let monthlyCompanyCost = totalCompanyCost / 12;
+    
     //use the event passed in to stop the default action
     //of page refresh
     event.preventDefault(event);
+    //clear the input fields
+    $('#firstNameIn').val('');
+    $('#lastNameIn').val('');
+    $('#iDNumIn').val('');
+    $('#jobTitleIn').val('');
+    $('#annualSalaryIn').val('');
+
     let employeeObject = {
         firstName : $('#firstNameIn').val(),
         lastName : $('#lastNameIn').val(),
@@ -30,8 +40,8 @@ function addEmployee() {//ENTER addEmployee
     employeeRoladex.push(employeeObject)
     console.log(employeeObject);
     console.log(employeeRoladex);
-    console.log(`The 'totalCompanyCost' is ${totalCompanyCost}. 
-    And, The 'MonthlyCompanyCost is ${totalCompanyCost / 12}`);
+    console.log(`The 'totalCompanyCost' is $${totalCompanyCost} 
+    And, The 'MonthlyCompanyCost' is $${totalCompanyCost / 12}`);
     
    // calculateMonthlyCost();
 };//EXIT addEmployee 
