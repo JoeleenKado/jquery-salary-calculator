@@ -22,18 +22,13 @@ function addEmployee() {//ENTER addEmployee
     //use the event passed in to stop the default action
     //of page refresh
     event.preventDefault(event);
-    //clear the input fields
-    $('#firstNameIn').val('');
-    $('#lastNameIn').val('');
-    $('#iDNumIn').val('');
-    $('#jobTitleIn').val('');
-    $('#annualSalaryIn').val('');
+    
 
     let employeeObject = {
         firstName : $('#firstNameIn').val(),
         lastName : $('#lastNameIn').val(),
         iDNumber : $('#iDNumIn').val(),
-        jobtitle : $('#jobTitleIn').val(),
+        jobTitle : $('#jobTitleIn').val(),
         annualSalary : $('#annualSalaryIn').val()
     }
     totalCompanyCost += Number(employeeObject.annualSalary);
@@ -43,6 +38,22 @@ function addEmployee() {//ENTER addEmployee
     console.log(`The 'totalCompanyCost' is $${totalCompanyCost} 
     And, The 'MonthlyCompanyCost' is $${totalCompanyCost / 12}`);
     
+    //Append information to the DOM 
+    let firstNameToDOM = `<th class="">${employeeObject.firstName}</th>`;
+    let lastNameToDOM = `<th class="">${employeeObject.lastName}</th>`;
+    let iDNumToDOM = `<th class="">${employeeObject.iDNumber}</th>`;
+    let jobTitleToDOM = `<th class="">${employeeObject.jobTitle}</th>`;
+    let annualSalaryTODOM = `<th class="">${employeeObject.annualSalary}</th>`;
+    $('#DOMTableSpot').append(firstNameToDOM, lastNameToDOM, iDNumToDOM, jobTitleToDOM, annualSalaryTODOM);
+    
+    //clear the input fields
+    $('#firstNameIn').val('');
+    $('#lastNameIn').val('');
+    $('#iDNumIn').val('');
+    $('#jobTitleIn').val('');
+    $('#annualSalaryIn').val('');
+
+
    // calculateMonthlyCost();
 };//EXIT addEmployee 
 
