@@ -38,13 +38,13 @@ function addEmployee() {//ENTER addEmployee
     console.log(`The 'totalCompanyCost' is $${totalCompanyCost} 
     And, The 'MonthlyCompanyCost' is $${totalCompanyCost / 12}`);
     
-    //Append information to the DOM 
+    //Append employee info to the DOM 
     let firstNameToDOM = `<th class="">${employeeObject.firstName}</th>`;
     let lastNameToDOM = `<th class="">${employeeObject.lastName}</th>`;
     let iDNumToDOM = `<th class="">${employeeObject.iDNumber}</th>`;
     let jobTitleToDOM = `<th class="">${employeeObject.jobTitle}</th>`;
     let annualSalaryTODOM = `<th class="">${employeeObject.annualSalary}</th>`;
-    $('#DOMTableSpot').append(firstNameToDOM, lastNameToDOM, iDNumToDOM, jobTitleToDOM, annualSalaryTODOM);
+    $('#employeeTable').append(`<tr>${firstNameToDOM}, ${lastNameToDOM}, ${iDNumToDOM}, ${jobTitleToDOM}, ${annualSalaryTODOM}</tr>`);
     
     //clear the input fields
     $('#firstNameIn').val('');
