@@ -11,7 +11,7 @@ function readyNow() {//ENTER readyNow
     $('#submitButton').on('click', addEmployee);
     /*Create a delete button that removes an employee from the DOM. 
     For Base mode, it does **not** need to remove that Employee's salary from the reported total.*/
-    $('#deleteButton').on('click', deleteEmployeeFunction);
+    //$('#deleteButton').on('click', deleteEmployeeFunction);
 };//EXIT readyNow  
 
 let totalCompanyCost= 0;
@@ -42,7 +42,8 @@ function addEmployee() {//ENTER addEmployee
     let iDNumToDOM = `<th class="">${employeeObject.iDNumber}</th>`;
     let jobTitleToDOM = `<th class="">${employeeObject.jobTitle}</th>`;
     let annualSalaryTODOM = `<th class="">${employeeObject.annualSalary}</th>`;
-    $('#employeeTable').append(`<tr>${firstNameToDOM}, ${lastNameToDOM}, ${iDNumToDOM}, ${jobTitleToDOM}, ${annualSalaryTODOM}</tr>`);
+    let deleteButton = `<th><button>DELETE</button></th>`;
+    $('#employeeTable').append(`<tr>${firstNameToDOM}, ${lastNameToDOM}, ${iDNumToDOM}, ${jobTitleToDOM}, ${annualSalaryTODOM}, ${deleteButton}</tr>`);
 
     //If the total monthly cost exceeds $20,000, add a red background color to the total monthly cost.
     if (totalCompanyCost / 12 > 20000) {
@@ -67,5 +68,6 @@ function appendMonthlyTODOM( ) {//ENTER appendMonthlyTODOM
 
 function deleteEmployeeFunction() {
         console.log('You have deleted an employee.');
+        //$('#employeeTable').remove()
         
     }
