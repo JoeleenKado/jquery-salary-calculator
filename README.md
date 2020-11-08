@@ -25,14 +25,17 @@ Include one or two screen shots of your project here (optional). Remove if unuse
 ## Usage
 To view the current financial status of our Company, pending the induction of a new employee:
 
-1. open our Salary Calculator in your web browser.
-2. Input new employee information into the input fields on the New Employee Form.
+1. Open Our Co. Salary Calculator in your web browser.
+2. Input employee information into the input fields on the New Employee Form.
 3. Once all fields are filled, click the Submit Button, and a snapshot of Our Co.'s Roster, along with Our Co.'s Salary obligations will be showcased on your screen. *A red banner indicates an instance where Our Co. cannot afford the employee roster.
 4. To remove an employee from the showcase, click the ...........
 
 ## Built With
 
 List technologies and frameworks here
+
+## Future Development
+* Graphics
 
 ## Acknowledgement
 Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. (Thank you: https://github.com/zuberabdikadir, https://github.com/sdeda1us, https://github.com/jordanNewberry21); for being a great Pod!
