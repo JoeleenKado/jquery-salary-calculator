@@ -26,10 +26,6 @@ To view the current financial status of our Company, pending induction of a new 
 3. Once all fields are filled, click the Submit Button, and a snapshot of Our Co.'s roster, along with Our Co.'s salary obligations will be showcased on your screen. *A red banner indicates an instance where Our Co. cannot afford the employee roster.
 4. To remove an employee from the showcase, click the the DELETE button to the right of the employee record.
 
-## Built With
-
-List technologies and frameworks here
-
 ## Future Development
 * Graphics
 
